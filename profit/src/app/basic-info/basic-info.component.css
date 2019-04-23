@@ -1,0 +1,59 @@
+#basic-form {
+    background: url('../../assets/img/svg/We_ig_ht_Light.svg'),
+    url('../../assets/img/svg/We_ig_ht_Light.svg'),
+    url('../../assets/img/svg/Pattern-1.svg');
+    background-position:-25px -250px,700px 100px, bottom left;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+.mat-form-field {
+    text-align: center !important;
+}
+
+.mat-select {
+    width: 50% !important;
+}
+
+.basic-info .mat-form-field-underline {
+    left: 20% !important;
+    width: 55% !important;
+} 
+
+.mat-select-arrow{
+    background-image: url('../../assets/img/arrow.png') ; 
+}
+.flex-container{
+    display: flex;
+    align-items: baseline;
+  }
+
+  .flex-item-basic-title{
+    flex-basis:85%
+  }
+  .flex-item-unit{
+    flex-basis:5%
+  }
+  .flex-item{
+    flex-basis:10%
+  }
+
+  .padding-class1{
+       padding: 2em 4em
+  }
+
+  .unit-select{
+      width:150px ; 
+  }
+
+  .info-text{
+      width:150px;
+  }
+
+  .next-button{
+    padding: 5em 10em;
+  }
+
+
+
+
+  

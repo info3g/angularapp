@@ -1,0 +1,67 @@
+<body id="measurments">
+<div class="padding-class1" style="text-align: center">
+  <form [formGroup]="measurementForm">
+    <section class="flex-container padding-class2">
+      <h1  style="  position: relative;
+      left: 130px;">'What is your size from your <span> preferred </span> brand?</h1>
+    </section>
+
+    <section class="flex-container padding-class2 measurements-field">
+      <h1 class="flex-item-basic-title">{{'Brand Name'|translate}}</h1>
+      <mat-form-field style= "left: 0% !important;
+        width: 100% !important;" class="flex-item">
+        <input id="brandName" matInput placeholder="Enter brand name" formControlName="brandName" [matAutocomplete]="auto" (ngModelChange)="onBrandInput($event)" [errorStateMatcher]="matcher" required>
+      </mat-form-field>
+      <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+        <mat-option *ngFor="let brand of brands" [value]="brand.brand">{{brand.brand}}</mat-option>
+      </mat-autocomplete>
+    </section>
+
+
+    <section class="flex-container padding-class2 measurements-field">
+      <h1 class="flex-item-basic-title">{{'Product Type'| translate}}</h1>
+      <mat-form-field class="flex-item">
+        <mat-select id="productType" formControlName='productType' placeholder="{{'Enter product type'|translate}}" (ngModelChange)="onProductChange($event)" required>
+          <mat-option *ngFor="let type of productTypes" [value]="type.product_type">{{type.product_type}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </section>
+
+    <section class="flex-container padding-class2 measurements-field">
+      <h1 class="flex-item-basic-title">{{'Size'| translate}}</h1>
+      <mat-form-field class="flex-item">
+        <mat-select id="size" formControlName='size' placeholder="{{'Enter size'|translate}}" required>
+          <mat-option *ngFor="let size of sizes" [value]="size">{{size.part}} - {{size.sizes}} - {{size.measurements}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </section>
+
+    <section class="next-button">
+      <button style="width: 50%" (click)="save()"
+        [ngStyle]="{'background-color':currentStyle.primary_background_color,'color':currentStyle.primary_text_color}"
+        mat-button>{{'Next'| translate}}</button>
+    </section>
+  </form>
+
+</div>
+
+</body>
+
+
+<!-- <div class="aloma-container-15em" style="text-align: center">
+  <section class="flex-container">
+    <h1>{{'Enter your bra size'|translate}}</h1>
+    <div class="group">
+      <h6 class="m-label">{{'Bra Size'|translate}}</h6>
+      <input class="m-text" type="text">
+    </div>
+    <div class="group">
+      <h6 class="m-label">{{'Cup Size'|translate}}</h6>
+      <input class="m-text" type="text">
+    </div>
+  </section>
+  <section style="margin: 3em 0em;">
+    <button style="width: 70%" (click)="save()" class="aloma-color-b" mat-button>{{'Next'|translate}}</button>
+  </section>
+
+</div> -->

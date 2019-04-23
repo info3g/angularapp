@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 263 353">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(247,247,247,0.2);
+        font-size: 150px;
+        font-family: Arial-Black, Arial Black;
+        font-weight: 800;
+      }
+
+      .cls-2 {
+        font-size: 100px;
+      }
+    </style>
+  </defs>
+  <text id="fa_-_t_Dark" data-name="fa - t Dark" class="cls-1"><tspan x="59.412" y="165">FA</tspan><tspan x="70.374" y="285">-</tspan><tspan class="cls-2" y="285"> </tspan><tspan y="285">T</tspan></text>
+</svg>

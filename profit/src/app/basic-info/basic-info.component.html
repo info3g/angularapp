@@ -1,0 +1,49 @@
+<body id="basic-form">
+    <div class="padding-class1 " style="text-align: center">
+      <form [formGroup]="basicForm">
+        <section class="flex-container basic-info" >
+            <h1 class="flex-item-basic-title">How <span class="highlight">tall</span> are you?</h1>
+            <mat-form-field class="flex-item info-text">
+            <input matInput placeholder="Enter Height" formControlName="height" [errorStateMatcher]="matcher" required>
+            </mat-form-field>
+            <mat-form-field class="flex-item-unit unit-select">
+            <mat-select formControlName="heightUnitValue" placeholder="{{'Unit' | translate}}">
+                <mat-option *ngFor="let unit of tallUnits" [value]="unit.value">{{unit.viewValue}}</mat-option>
+            </mat-select>
+            </mat-form-field>
+        </section>
+        
+        <section class="flex-container basic-info">
+            <h1 class="flex-item-basic-title">What's your <span class="highlight">weight</span></h1>
+            <mat-form-field class="flex-item info-text" >
+            <input matInput placeholder="Enter Weight" formControlName="weight" [errorStateMatcher]="matcher" required>
+            </mat-form-field>
+            <mat-form-field class="flex-item-unit unit-select">
+            <mat-select formControlName="weightUnitValue" placeholder="{{'Unit'|translate}}">
+                <mat-option *ngFor="let unit of weightUnits" [value]="unit.value">{{unit.viewValue}}</mat-option>
+            </mat-select>
+            </mat-form-field>
+        </section>
+        
+        <section *ngIf="gender==='f'" class="flex-container basic-info" style="padding-left:5.1em">
+            <h1 class="flex-item-basic-title">Enter <span class="highlight">bra</span> Size</h1>
+            <mat-form-field class="flex-item info-text" >
+                <input matInput formControlName="braSize" placeholder="Bra Size">
+            </mat-form-field>
+            <mat-form-field class="flex-item info-text" >
+            <input matInput formControlName="cupSize" placeholder="Cup Size">
+            </mat-form-field>
+            <mat-form-field class="flex-item-unit unit-select">
+            <mat-select formControlName="capBraUnitValue" placeholder="{{'Unit'|translate}}">
+                <mat-option *ngFor="let unit of tallUnits" [value]="unit.value">{{unit.viewValue}}</mat-option>
+            </mat-select>
+            </mat-form-field>
+        </section>
+        <section  class="next-button">
+            <button style="width: 70%" (click)="save()" [ngStyle]="{'background-color':currentStyle.primary_background_color,'color':currentStyle.primary_text_color}"  mat-button>{{'Next'| translate}}</button>
+        </section>
+      </form>
+     
+    </div>
+      
+</body>

@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~src/variables.scss";
+.mat-form-field-appearance-legacy .mat-form-field-label {
+  color: #ffb116;
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+  font-family: arial;
+  font-weight: 100;
+  font-size: 2em;
+}
+
+.aloma-color-b{
+  background: #FFB116 ; 
+  color:#fff ; 
+}
+.aloma-color-t{
+  color:#FFB116
+}
+.aloma-container-5em{
+  padding: 5em ; 
+}
+

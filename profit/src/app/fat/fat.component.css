@@ -1,0 +1,37 @@
+#fat-form{
+  background: url('../../assets/img/svg/Bo_dy_Light.svg'),
+  url('../../assets/img/svg/Bo_dy_Light.svg'),
+   url('../../assets/img/svg/Pattern-1.svg');  
+   background-position: -25px -120px,700px 100px, bottom left ;
+   background-repeat: no-repeat, no-repeat, no-repeat;
+
+}
+
+
+
+.mat-radio-container {
+  display: none !important;
+}
+.fat-section{
+    padding: 0.5em 2em;
+}
+.fat-image{
+  width: 7em;
+    padding: 1em;
+}
+
+.mat-radio-checked  .fat-image{
+    border: 1px solid #ffb116;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #ccc
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-container > * {
+    width: 100%;
+  }
+  

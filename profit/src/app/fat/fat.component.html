@@ -1,0 +1,17 @@
+<div id="fat-form">
+  <div  style="text-align: center">
+      <form [formGroup]="fatForm">
+        <div class="fat-section">
+            <mat-radio-group class="example-radio-group" formControlName="selectedFat" (change)="onChange($event)" required>
+                <mat-radio-button class="radio-button-class" *ngFor="let option of fatArray" [value]="option" required>
+                  <img class="fat-image" src="{{option.src}}">
+                </mat-radio-button>
+              </mat-radio-group>
+        </div>
+        <mat-error *ngIf="isSelected">Please select body shape.</mat-error>
+        <section style="margin: 4em 2em;">
+          <button style="width: 30%" (click)="save()" class="aloma-color-b" mat-button>{{'Next'|translate}}</button>
+        </section>
+      </form>
+  </div>
+</div>

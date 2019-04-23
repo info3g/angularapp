@@ -1,0 +1,74 @@
+<!-- <div class="flex-container">
+  <div class="result-item">
+    <h3 style="text-align:center">
+      {{'Your best fit is'|translate}}
+    </h3>
+    <h3 style="text-align:center" class="result-head">Large</h3>
+    <div class="range">
+      <input type="range" min="1" max="7" steps="1" value="1">
+    </div>
+
+    <ul class="range-labels">
+      <li class="active selected">Today</li>
+      <li>2 days</li>
+      <li>3 days</li>
+      <li>4 days</li>
+      <li>5 days</li>
+      <li>6 days</li>
+      <li>7 days</li>
+    </ul>
+  </div>
+  <div class="product-image-item">
+    <img class="product-image"
+      src="https://cdn.shopify.com/s/files/1/0043/3694/3204/products/atmos-here-curvy-5696-011775-1_1024x1024@2x.jpg?v=1543061783">
+  </div>
+</div> -->
+<div id="result-form">
+<div style="display:flex">
+<div style="padding:1em">
+  <h3 style="text-align:center">{{'Your best fit is'|translate}} {{size}}</h3>
+  <h3 style="text-align:center" class="result-head">{{profileSize}}</h3>
+  <div class="range">
+    <input type="range" min="1" max="7" steps="1" value="1" id="resultValue">
+  </div>
+
+  <ul class="range-labels">
+    <li class="active selected">XXS
+      <span class="perfect-lebel">Perfect</span>
+    </li>
+    <li>XS
+      <span class="perfect-lebel">Perfect</span>
+    </li>
+    <li>S
+      <span class="perfect-lebel">Perfect</span>
+    </li>
+    <li>M
+      <span class="perfect-lebel">Perfect</span>
+    </li>
+    <li>L
+      <span class="perfect-lebel">Perfect</span>
+    </li>
+    <li>XL
+      <span class="perfect-lebel">Perfect</span>
+    </li>
+    <li>XLL
+      <span class="perfect-lebel">Perfect</span>
+    </li>
+  </ul>
+</div>
+<div>
+  <img style="width:80%"
+  src="https://cdn.shopify.com/s/files/1/0043/3694/3204/products/atmos-here-curvy-5696-011775-1_1024x1024@2x.jpg?v=1543061783">
+</div>
+</div>
+
+<section class="next-button">
+  <button style="width:30%;margin: 1em"
+    [ngStyle]="{'background-color':currentStyle.primary_background_color,'color':currentStyle.primary_text_color}"
+    (click)="saveMeasureMent()"
+    mat-button>Save Measuerments</button>
+    <button style="width:30%;margin: 1em"
+    [ngStyle]="{'background-color':currentStyle.primary_background_color,'color':currentStyle.primary_text_color}"
+    mat-button>Continue Shopping</button>
+</section>
+</div>

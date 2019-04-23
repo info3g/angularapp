@@ -1,0 +1,33 @@
+.flex-container {
+    align-items: center;
+    display: flex;
+}
+
+.product-image{
+    width: 98%;
+    border: 2px solid #ffb116;
+}
+.result-text{
+    width: min-intrinsic;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    display: table-caption;
+    display: -ms-grid;
+    -ms-grid-columns: min-content;
+}
+.result-col{
+    margin: 2px 10px ; 
+}
+
+.part-title h5
+{
+    color: #ffb116;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.result-string{
+    font-family: sans-serif;
+}
+

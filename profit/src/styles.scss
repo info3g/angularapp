@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~src/variables.scss";
+body{
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mat-form-field-appearance-legacy .mat-form-field-label {
+  color: #ffb116;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+  font-family: arial;
+  font-weight: 100;
+  font-size: 2em;
+}
+
+.aloma-color-b{
+  background: #FFB116 ; 
+  color:#fff ; 
+}
+.aloma-color-t{
+  color:#FFB116
+}
+.aloma-container-5em{
+  padding: 5em ; 
+}
+
+.app-primary-button{
+  background:$theme-primary-color; 
+  color:  $theme-primary-text-color
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+  background-color: #ffb116;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline:focus{
+background-color: #ffb116;
+}
+
+
+.mat-input-element {
+caret-color: #ffb116;
+}
+
+.mat-input-element:focus {
+caret-color: #ffb116;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-label {
+color: #ffb116;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-label:focus{
+color: #ffb116;
+}
+
+.mat-select-value {
+font-weight: 700;
+color: #ffb116;
+}
+
+section h1.flex-item-basic-title span.highlight{
+font-weight: 700;
+color: #ffb116;
+}
+
+.mat-select {
+  width: 100% !important;
+}
+.mat-form-field-underline {
+  width: 100% !important;
+} 
+

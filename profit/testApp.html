@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Profit</title>
+    <link rel="stylesheet" href="modal/tingle.min.css">
+    <style>
+        iframe {
+            width: 100%;
+            height: 650px;
+            border:none ; 
+        }
+
+        .tingle-modal-box__content {
+            padding: 0px;
+        }
+		
+		.tingle-modal-box{
+		   width:80%;
+		}
+	
+    </style>
+</head>
+
+<body>
+
+    <button id="tryM" onclick="showTryModal('m')">
+        Try Male
+    </button>
+    <button id="tryF" onclick="showTryModal('f')">
+        Try Female
+    </button>
+
+    <script src="modal/tingle.min.js"></script>
+    <script>
+        var showTryModal = function (gender) {
+            var modal = new tingle.modal({
+                footer: false,
+                stickyFooter: false,
+                closeMethods: ['overlay', 'button', 'escape'],
+                closeLabel: "Close",
+                onOpen: function () {
+                   
+                },
+                onClose: function () {
+
+                },
+                beforeClose: function () {
+                    // here's goes some logic
+                    // e.g. save content before closing the modal
+                    return true; // close the modal
+                    return false; // nothing happens
+                }
+
+
+            });
+            modal.setContent('<iframe src="http://localhost:4200/?g='+gender+'"></iframe>');
+            // open modal
+            modal.open();
+
+
+
+        }
+    </script>
+</body>
+
+</html>
